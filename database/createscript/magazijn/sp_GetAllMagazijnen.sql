@@ -9,7 +9,11 @@ BEGIN
            ,MGZN.ProductId
            ,MGZN.VerpakkingsEenheid
            ,MGZN.AantalAanwezig
-    FROM Magazijn AS MGZN;
+           ,Product.Naam
+           ,Product.Barcode
+    FROM Magazijn AS MGZN
+    INNER JOIN Product ON Product.Id = MGZN.ProductId
+    ORDER BY Product.Barcode ASC;
 END$$
 
 DELIMITER ;

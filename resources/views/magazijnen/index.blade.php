@@ -14,13 +14,15 @@
         <table class='table'>
             <thead>
                 <th>Product</th>
+                <th>Barcode</th>
                 <th>Verpakkings eenheid</th>
                 <th>Aantal aanwezig</th>
             </thead>
             <tbody>
                 @forelse ($data['magazijnen'] as $magazijn)
                     <tr>
-                        <td>{{ $magazijn->ProductId }}</td>
+                        <td>{{ $magazijn->Naam }}</td>
+                        <td>{{ $magazijn->Barcode }}</td>
                         <td>{{ $magazijn->VerpakkingsEenheid }}</td>
                         <td>{{ $magazijn->AantalAanwezig }}</td>
                     </tr>
