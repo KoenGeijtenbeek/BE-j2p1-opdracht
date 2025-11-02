@@ -38,6 +38,7 @@
                 @else
                     <tr>
                         <td>Er is van dit product op dit moment geen voorraad aanwezig, de verwachte eerstvolgende levering is: {{ $data[0]->DatumEerstvolgendeLevering ?? 'onbekend' }}</td>
+                        <?= header("Refresh: 4 ; url=../magazijn"); ?>
                     </tr>
                 @endif
             </tbody>
