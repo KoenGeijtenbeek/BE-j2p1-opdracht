@@ -8,9 +8,9 @@ CREATE PROCEDURE sp_GetAllergeenPerProduct(
 
 BEGIN
 
-    SELECT p.Naam
+    SELECT p.Naam AS ProductNaam
           ,p.Barcode
-          ,a.Naam
+          ,a.Naam AS AllergeenNaam
           ,a.Omschrijving
     FROM Product AS p
     INNER JOIN ProductPerAllergeen AS ppa ON p.Id = ppa.ProductId
