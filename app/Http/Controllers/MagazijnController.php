@@ -87,7 +87,8 @@ class MagazijnController extends Controller
     }
 
     public function leverancier($id){
-        // call sp_GetLeverancierPerProduct
+        $data = $this->magazijnModel->sp_GetAllergeenPerProduct($id);
+        
         return view('leverancier.show', ['id' => $id]);
     }
 }
