@@ -23,7 +23,10 @@ Route::delete('/allergeen/{id}', [AllergeenController::class, 'destroy'])->name(
 Route::get('/allergeen/{id}/edit', [AllergeenController::class, 'edit'])->name('allergeen.edit');
 Route::put('/allergeen/{id}', [AllergeenController::class, 'update'])->name('allergeen.update');
 
+// allergeen per product
 Route::get('/allergeen/{id}', [MagazijnController::class, 'allergeen'])->name('allergeen.allergeen');
+
+// leverancir per product
 Route::get('/leverancier/{id}', [MagazijnController::class, 'leverancier'])->name('leverancier.leverancier');
 
 

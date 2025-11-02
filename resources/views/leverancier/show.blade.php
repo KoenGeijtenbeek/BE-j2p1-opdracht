@@ -13,10 +13,10 @@
 
         <h1>Leerancier Overzicht</h1>
 
-        <h3>Naam leverancier: {{ $data[0]->LeverancierNaam ?? '' }}</h3>
-        <h3>Contactpersoon leverancier: {{ $data[0]->ContactPersoon ?? '' }}</h3>
-        <h3>Leverancier nummer: {{ $data[0]->LeverancierNummer ?? '' }}</h3>
-        <h3>Mobiel: {{ $data[0]->Mobiel ?? '' }}</h3>
+        <h4>Naam leverancier: {{ $data[0]->LeverancierNaam ?? '' }}</h4>
+        <h4>Contactpersoon leverancier: {{ $data[0]->ContactPersoon ?? '' }}</h4>
+        <h4>Leverancier nummer: {{ $data[0]->LeverancierNummer ?? '' }}</h4>
+        <h4>Mobiel: {{ $data[0]->Mobiel ?? '' }}</h4>
 
         <table class='table'>
             <thead>
