@@ -13,8 +13,8 @@
 
         <h1>Allergeen Overzicht</h1>
 
-        <h3>Naam: {{ $data[0]->ProductNaam }}</h3>
-        <h3>Barcode: {{ $data[0]->Barcode }}</h3>
+        <h3>Naam: {{ $data[0]->ProductNaam ?? '' }}</h3>
+        <h3>Barcode: {{ $data[0]->Barcode ?? '' }}</h3>
 
         <table class='table'>
             <thead>
