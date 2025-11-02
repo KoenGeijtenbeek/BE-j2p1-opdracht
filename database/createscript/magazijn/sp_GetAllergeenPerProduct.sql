@@ -8,10 +8,8 @@ CREATE PROCEDURE sp_GetAllergeenPerProduct(
 
 BEGIN
 
-    SELECT p.Id
-          ,p.Naam
+    SELECT p.Naam
           ,p.Barcode
-          ,a.Id
           ,a.Naam
           ,a.Omschrijving
     FROM Product AS p
