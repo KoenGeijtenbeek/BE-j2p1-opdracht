@@ -15,5 +15,8 @@ class MagazijnModel extends Model
     // sp_GetLeverancierPerProduct
 
 
-    // sp_GetAllergeenPerProduct
+    public function sp_GetAllergeenPerProduct($id){
+        return DB::select('CALL sp_GetAllergeenPerProduct(:id)',
+        ['id' => $id]);
+    }
 }

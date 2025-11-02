@@ -81,8 +81,9 @@ class MagazijnController extends Controller
     }
 
     public function allergeen($id){
-        //call sp_GetAllergeenPerProduct
-        return view('allergenen.show', ['id' => $id]);
+        $data = $this->magazijnModel->sp_GetAllergeenPerProduct($id);
+        
+        return view('allergenen.show', ['data' => $data]);
     }
 
     public function leverancier($id){
