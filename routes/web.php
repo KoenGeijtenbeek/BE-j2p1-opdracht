@@ -23,6 +23,12 @@ Route::delete('/allergeen/{id}', [AllergeenController::class, 'destroy'])->name(
 Route::get('/allergeen/{id}/edit', [AllergeenController::class, 'edit'])->name('allergeen.edit');
 Route::put('/allergeen/{id}', [AllergeenController::class, 'update'])->name('allergeen.update');
 
+Route::get('/allergeen/{id}', [MagazijnController::class, 'allergeen'])->name('allergeen.allergeen');
+Route::get('/leverancier/{id}', [MagazijnController::class, 'leverancier'])->name('leverancier.leverancier');
+
+
+
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');

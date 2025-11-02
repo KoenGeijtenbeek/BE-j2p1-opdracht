@@ -79,4 +79,14 @@ class MagazijnController extends Controller
     {
         //
     }
+
+    public function allergeen($id){
+        //call sp_GetAllergeenPerProduct
+        return view('allergenen.show', ['id' => $id]);
+    }
+
+    public function leverancier($id){
+        // call sp_GetLeverancierPerProduct
+        return view('leverancier.show', ['id' => $id]);
+    }
 }

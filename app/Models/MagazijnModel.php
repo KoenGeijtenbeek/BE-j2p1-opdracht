@@ -11,4 +11,9 @@ class MagazijnModel extends Model
     {
         return DB::select('CALL SP_GetAllMagazijnen');
     }
+
+    // sp_GetLeverancierPerProduct
+
+
+    // sp_GetAllergeenPerProduct
 }
